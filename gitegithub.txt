@@ -1,0 +1,124 @@
+rvnas@Renato-Vieira MINGW64 ~/Desktop/git-e-github (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        "Ol\303\241 Mundo.txt"
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+rvnas@Renato-Vieira MINGW64 ~/Desktop/git-e-github (master)
+$ git add "Olá Mundo.txt"
+
+rvnas@Renato-Vieira MINGW64 ~/Desktop/git-e-github (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   "Ol\303\241 Mundo.txt"
+
+
+rvnas@Renato-Vieira MINGW64 ~/Desktop/git-e-github (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   "Ol\303\241 Mundo.txt"
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        app.py.txt
+        renato.png.bmp
+        senha.xlsx.txt
+
+
+rvnas@Renato-Vieira MINGW64 ~/Desktop/git-e-github (master)
+$ git add .
+
+rvnas@Renato-Vieira MINGW64 ~/Desktop/git-e-github (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   "Ol\303\241 Mundo.txt"
+        new file:   app.py.txt
+        new file:   renato.png.bmp
+        new file:   senha.xlsx.txt
+
+
+rvnas@Renato-Vieira MINGW64 ~/Desktop/git-e-github (master)
+$ git commit -m "commit inicial"
+[master (root-commit) 1e977d7] commit inicial
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 "Ol\303\241 Mundo.txt"
+ create mode 100644 app.py.txt
+ create mode 100644 renato.png.bmp
+ create mode 100644 senha.xlsx.txt
+
+rvnas@Renato-Vieira MINGW64 ~/Desktop/git-e-github (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+rvnas@Renato-Vieira MINGW64 ~/Desktop/git-e-github (master)
+$ git remote add origin https://github.com/renatovn/prejeto1-renatovn-devaprender.git
+
+rvnas@Renato-Vieira MINGW64 ~/Desktop/git-e-github (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+rvnas@Renato-Vieira MINGW64 ~/Desktop/git-e-github (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+rvnas@Renato-Vieira MINGW64 ~/Desktop/git-e-github (master)
+$ git push --set-upstream origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 265 bytes | 132.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/renatovn/prejeto1-renatovn-devaprender/pull/new/master
+remote:
+To https://github.com/renatovn/prejeto1-renatovn-devaprender.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+rvnas@Renato-Vieira MINGW64 ~/Desktop/git-e-github (master)
+$
